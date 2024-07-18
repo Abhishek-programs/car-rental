@@ -48,7 +48,7 @@ namespace VehicleRentalProject.Web.Controllers
         [Authorize(Roles = "Customer")]
         public async Task<IActionResult> Order(SummaryViewModel vm)
         {
-            var domain = "https://localhost:7014";
+            var domain = "http://localhost:5198";
             var options = new SessionCreateOptions
             {
                 LineItems = new List<SessionLineItemOptions>

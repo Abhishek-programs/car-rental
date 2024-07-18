@@ -96,7 +96,7 @@ namespace VehicleRentalProject.Web.Areas.Customer.Controllers
             await _cartService.ClearCart(claims.Value);
 
           //  Card Details Here
-           var domain = "https://localhost:7014/";
+           var domain = "http://localhost:5198/";
             var options = new SessionCreateOptions
             {
                 LineItems = new List<SessionLineItemOptions>(),
